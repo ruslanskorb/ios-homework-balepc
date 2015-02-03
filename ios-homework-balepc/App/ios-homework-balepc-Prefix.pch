@@ -1,0 +1,40 @@
+//
+//  ios-homework-balepc-Prefix.pch
+//  ios-homework-balepc
+//
+//  Created by Ruslan Skorb on 2/2/15.
+//  Copyright (c) 2015 Ruslan Skorb. All rights reserved.
+//
+
+#ifndef ios_homework_balepc_ios_homework_balepc_Prefix_pch
+#define ios_homework_balepc_ios_homework_balepc_Prefix_pch
+
+#import <Availability.h>
+
+#ifndef __IPHONE_7_0
+#warning "This project uses features only available in iOS SDK 7.0 and later."
+#endif
+
+#ifdef __OBJC__
+    #import <UIKit/UIKit.h>
+    #import <Foundation/Foundation.h>
+    #import <SystemConfiguration/SystemConfiguration.h>
+
+    #import "HWAppConstants.h"
+
+    #import <AFNetworking/AFNetworking.h>
+    #import <Mantle/Mantle.h>
+    #import <ReactiveCocoa/ReactiveCocoa.h>
+    #import <EDColor/UIColor+Hex.h>
+    #import <SVProgressHUD/SVProgressHUD.h>
+
+    #import "Models.h"
+    #import "HomeWorkAPI.h"
+    #import "Categories.h"
+
+    #import <libextobjc/EXTKeyPathCoding.h>
+    #import <libextobjc/EXTScope.h>
+
+#endif
+
+#endif

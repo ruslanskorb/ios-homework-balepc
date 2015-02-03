@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="oxh-4O-xU9">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Books-->
+        <scene sceneID="Uz7-Qw-3Y5">
+            <objects>
+                <tableViewController storyboardIdentifier="HWBooksViewControllerID" id="EEL-NJ-9Xt" customClass="HWBooksViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="101" sectionHeaderHeight="22" sectionFooterHeight="22" id="xeo-ew-rps">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="BookCellIdentifier" rowHeight="98" id="cQf-sv-RXk" customClass="HWBookTableViewCell">
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="cQf-sv-RXk" id="E14-zh-ca5">
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The Story of English" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="0.0" translatesAutoresizingMaskIntoConstraints="NO" id="t1X-ts-vpB" userLabel="titleLabel">
+                                            <rect key="frame" x="77" y="10" width="482" height="19"/>
+                                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
+                                            <color key="textColor" red="0.49019607840000001" green="0.36078431370000003" blue="0.30980392159999998" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Xgf-jE-nqA" userLabel="coverImageView">
+                                            <rect key="frame" x="15" y="10" width="52" height="77"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="77" id="45O-4I-cPs"/>
+                                                <constraint firstAttribute="width" constant="52" id="660-za-idh"/>
+                                            </constraints>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Joseph Piercy" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="0.0" translatesAutoresizingMaskIntoConstraints="NO" id="N1J-hh-vr3" userLabel="authorLabel">
+                                            <rect key="frame" x="77" y="32" width="482" height="19"/>
+                                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
+                                            <color key="textColor" red="0.73725490196078436" green="0.66666666666666663" blue="0.59999999999999998" alpha="0.90000000000000002" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="N1J-hh-vr3" firstAttribute="leading" secondItem="Xgf-jE-nqA" secondAttribute="trailing" constant="10" id="8yl-6p-v6z"/>
+                                        <constraint firstItem="Xgf-jE-nqA" firstAttribute="centerY" secondItem="E14-zh-ca5" secondAttribute="centerY" id="G4b-5Q-3GO"/>
+                                        <constraint firstItem="t1X-ts-vpB" firstAttribute="top" secondItem="Xgf-jE-nqA" secondAttribute="top" id="HNn-QO-aVQ"/>
+                                        <constraint firstAttribute="bottomMargin" relation="greaterThanOrEqual" secondItem="N1J-hh-vr3" secondAttribute="bottom" constant="10" id="JQT-vq-pGH"/>
+                                        <constraint firstItem="t1X-ts-vpB" firstAttribute="leading" secondItem="Xgf-jE-nqA" secondAttribute="trailing" constant="10" id="SRh-Tu-FZP"/>
+                                        <constraint firstItem="N1J-hh-vr3" firstAttribute="trailing" secondItem="E14-zh-ca5" secondAttribute="trailingMargin" id="VzW-w1-6NU"/>
+                                        <constraint firstItem="Xgf-jE-nqA" firstAttribute="leading" secondItem="E14-zh-ca5" secondAttribute="leadingMargin" constant="7" id="YZM-6f-1XR"/>
+                                        <constraint firstItem="N1J-hh-vr3" firstAttribute="top" secondItem="t1X-ts-vpB" secondAttribute="bottom" constant="3" id="yKP-Og-bFx"/>
+                                        <constraint firstItem="t1X-ts-vpB" firstAttribute="trailing" secondItem="E14-zh-ca5" secondAttribute="trailingMargin" id="zUM-op-cdf"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <inset key="separatorInset" minX="15" minY="0.0" maxX="15" maxY="0.0"/>
+                                <connections>
+                                    <outlet property="authorLabel" destination="N1J-hh-vr3" id="aHm-8G-pWr"/>
+                                    <outlet property="coverImageView" destination="Xgf-jE-nqA" id="mEe-EF-r4g"/>
+                                    <outlet property="titleLabel" destination="t1X-ts-vpB" id="Nfi-bg-Sgv"/>
+                                    <segue destination="XD0-1T-IPS" kind="show" identifier="HWFromBooksToBookFeedbackIdentifier" id="gLb-pu-6od"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="EEL-NJ-9Xt" id="IH9-yK-yOc"/>
+                            <outlet property="delegate" destination="EEL-NJ-9Xt" id="XNv-Dk-zH1"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Books" id="pHO-je-0ye"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lVp-yT-d3f" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1527" y="246"/>
+        </scene>
+        <!--The Story of English-->
+        <scene sceneID="LwY-Iy-05y">
+            <objects>
+                <tableViewController storyboardIdentifier="HWBookFeedbackViewControllerID" id="XD0-1T-IPS" customClass="HWBookFeedbackViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" keyboardDismissMode="interactive" dataMode="static" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="pnk-iE-L3D">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <sections>
+                            <tableViewSection id="Ff0-42-9Rj">
+                                <cells>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="44" id="bKg-Au-jJE">
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="bKg-Au-jJE" id="hyc-Z6-8R5">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Your name (required)" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3ks-Y0-uAe" userLabel="nameTextField">
+                                                    <rect key="frame" x="15" y="11" width="570" height="20"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="20" id="fGI-Md-o4S"/>
+                                                    </constraints>
+                                                    <color key="textColor" red="0.49019607840000001" green="0.36078431370000003" blue="0.30980392159999998" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
+                                                    <textInputTraits key="textInputTraits" autocapitalizationType="words" returnKeyType="next"/>
+                                                </textField>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="3ks-Y0-uAe" firstAttribute="leading" secondItem="hyc-Z6-8R5" secondAttribute="leadingMargin" constant="7" id="FSa-mN-bnk"/>
+                                                <constraint firstAttribute="centerY" secondItem="3ks-Y0-uAe" secondAttribute="centerY" id="dEI-ml-wdT"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="3ks-Y0-uAe" secondAttribute="trailing" constant="7" id="wgB-GC-7Ad"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                            <tableViewSection id="dQh-uk-Cyn">
+                                <cells>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="246" id="M7a-Se-veT" customClass="HWCommentTableViewCell">
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="M7a-Se-veT" id="lsz-IX-5AV">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hCZ-V2-KG8" userLabel="commentPlaceholderTextView">
+                                                    <rect key="frame" x="12" y="1" width="576" height="244"/>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <attributedString key="attributedText">
+                                                        <fragment content="Your comment (more than 100 characters required)">
+                                                            <attributes>
+                                                                <color key="NSColor" red="0.7803921568627451" green="0.7803921568627451" blue="0.80392156862745101" alpha="1" colorSpace="calibratedRGB"/>
+                                                                <font key="NSFont" size="16" name="HelveticaNeue"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="3"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                    </attributedString>
+                                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                </textView>
+                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" keyboardDismissMode="onDrag" translatesAutoresizingMaskIntoConstraints="NO" id="GQH-oK-njr" userLabel="commentTextView">
+                                                    <rect key="frame" x="12" y="1" width="576" height="244"/>
+                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                    <color key="textColor" red="0.49019607840000001" green="0.36078431370000003" blue="0.30980392159999998" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
+                                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                </textView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="hCZ-V2-KG8" firstAttribute="height" secondItem="GQH-oK-njr" secondAttribute="height" id="91X-ON-Nbl"/>
+                                                <constraint firstItem="GQH-oK-njr" firstAttribute="leading" secondItem="lsz-IX-5AV" secondAttribute="leadingMargin" constant="4" id="Df0-fu-ctk"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="GQH-oK-njr" secondAttribute="trailing" constant="4" id="NyG-Qt-A1x"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="GQH-oK-njr" secondAttribute="bottom" constant="-8" id="VaW-Kh-nOL"/>
+                                                <constraint firstItem="hCZ-V2-KG8" firstAttribute="width" secondItem="GQH-oK-njr" secondAttribute="width" id="Vn8-Yf-dAN"/>
+                                                <constraint firstItem="GQH-oK-njr" firstAttribute="top" secondItem="lsz-IX-5AV" secondAttribute="topMargin" constant="-7" id="WPb-eG-WZI"/>
+                                                <constraint firstItem="hCZ-V2-KG8" firstAttribute="centerX" secondItem="GQH-oK-njr" secondAttribute="centerX" id="gry-7a-vmw"/>
+                                                <constraint firstItem="hCZ-V2-KG8" firstAttribute="centerY" secondItem="GQH-oK-njr" secondAttribute="centerY" id="zib-76-5qD"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="XD0-1T-IPS" id="RsN-WM-Z4U"/>
+                            <outlet property="delegate" destination="XD0-1T-IPS" id="os1-gD-9bt"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="The Story of English" id="XNc-rD-AlW">
+                        <barButtonItem key="rightBarButtonItem" title="Send" id="J4i-t3-eSR">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <connections>
+                                <action selector="onSendButtonPressed:" destination="XD0-1T-IPS" id="qVD-F9-h2M"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="commentCell" destination="M7a-Se-veT" id="p5A-Wr-Ble"/>
+                        <outlet property="commentPlaceholderTextView" destination="hCZ-V2-KG8" id="Gd9-oD-HA7"/>
+                        <outlet property="commentTextView" destination="GQH-oK-njr" id="wMx-ii-Ozg"/>
+                        <outlet property="commentTextViewBottomConstraint" destination="VaW-Kh-nOL" id="R3E-MP-oQI"/>
+                        <outlet property="commentTextViewTopConstraint" destination="WPb-eG-WZI" id="jhm-ib-jnC"/>
+                        <outlet property="nameTextField" destination="3ks-Y0-uAe" id="UiW-0h-blo"/>
+                        <outlet property="sendBarButtonItem" destination="J4i-t3-eSR" id="NFQ-Li-0i5"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nJ3-1q-xNV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2296" y="245"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Krp-MO-d07">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="oxh-4O-xU9" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="bzm-Xm-HHi">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="EEL-NJ-9Xt" kind="relationship" relationship="rootViewController" id="uxc-1a-XK1"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="df3-IE-E42" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="716" y="246"/>
+        </scene>
+    </scenes>
+</document>

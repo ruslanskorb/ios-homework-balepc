@@ -1,0 +1,29 @@
+//
+//  ios-homework-balepcTests-Prefix.pch
+//  ios-homework-balepc
+//
+//  Created by Ruslan Skorb on 2/2/15.
+//  Copyright (c) 2015 Ruslan Skorb. All rights reserved.
+//
+
+#ifndef ios_homework_balepc_ios_homework_balepcTests_Prefix_pch
+#define ios_homework_balepc_ios_homework_balepcTests_Prefix_pch
+
+#ifdef __OBJC__
+    #import <Foundation/Foundation.h>
+    #define EXP_SHORTHAND
+    #import <Specta/Specta.h>
+    #import <Expecta/Expecta.h>
+    #import <Expecta+Snapshots/EXPMatchers+FBSnapshotTest.h>
+    #import <OHHTTPStubs/OHHTTPStubs.h>
+    #import <OCMock/OCMock.h>
+    #import <AFNetworking/AFNetworking.h>
+    #import <Mantle/Mantle.h>
+    #import "MTLModel+JSON.h"
+    #import "OHHTTPStubs+JSON.h"
+    #import "Models.h"
+    #import "ARExpectaExtensions.h"
+    #import "ARTestContext.h"
+#endif
+
+#endif

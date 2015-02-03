@@ -1,0 +1,28 @@
+//
+//  HomeWorkAPI+Private.h
+//  ios-homework-balepc
+//
+//  Created by Ruslan Skorb on 2/2/15.
+//  Copyright (c) 2015 Ruslan Skorb. All rights reserved.
+//
+
+#import "HWRouter.h"
+
+@interface HomeWorkAPI (Private)
+
+/// A simple method for performing a ARJSONRequest and passing back the returned JSON as a native object
++ (AFJSONRequestOperation *)performRequest:(NSURLRequest *)request success:(void (^)(id))success failure:(void (^)(NSURLRequest *request, NSHTTPURLResponse *response, NSError *error))failure;
+
++ (AFJSONRequestOperation *)getRequest:(NSURLRequest *)request parseIntoAClass:(Class)klass success:(void (^)(id))success failure:(void (^)(NSError *error))failure;
++ (AFJSONRequestOperation *)getRequest:(NSURLRequest *)request parseIntoAnArrayOfClass:(Class)klass success:(void (^)(NSArray *))success failure:(void (^)(NSError *error))failure;
+
+/// If the object you're after is hidden behind a key, this function is for you
++ (AFJSONRequestOperation *)getRequest:(NSURLRequest *)request parseIntoAClass:(Class)klass withKey:(NSString *)key success:(void (^)(id))success failure:(void (^)(NSError *error))failure;
+
+/// If the array you're after is hidden behind a key, this function is for you
++ (AFJSONRequestOperation *)getRequest:(NSURLRequest *)request parseIntoAnArrayOfClass:(Class)klass withKey:(NSString *)key success:(void (^)(NSArray *))success failure:(void (^)(NSError *error))failure;
+
+/// If you're dealing with dictionary as the root object and want an array of objects
++ (AFJSONRequestOperation *)getRequest:(NSURLRequest *)request parseIntoAnArrayOfClass:(Class)klass fromDictionaryWithKey:(NSString *)key success:(void (^)(NSArray *))success failure:(void (^)(NSError *error))failure;
+
+@end

@@ -1,0 +1,918 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2C0116317E75A54ED1BBDDE9 /* libPods-ios-homework-balepcTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 216CDA5082CF230F8C0CFEA3 /* libPods-ios-homework-balepcTests.a */; };
+		98309D74CEFA9B53B12E22FE /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E933E0A066C05041D54531F8 /* libPods.a */; };
+		B81BBA8D1A7FCB710096C3A5 /* HWRouterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B81BBA8C1A7FCB710096C3A5 /* HWRouterTests.m */; };
+		B825DEE91A81376400B01EBA /* HWCommentTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B825DEE81A81376400B01EBA /* HWCommentTableViewCell.m */; };
+		B835F7851A7B5CE100C38351 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B835F7831A7B5CE100C38351 /* Main.storyboard */; };
+		B835F7871A7B5CE100C38351 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B835F7861A7B5CE100C38351 /* Images.xcassets */; };
+		B835F78A1A7B5CE100C38351 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = B835F7881A7B5CE100C38351 /* LaunchScreen.xib */; };
+		B851E98A1A80BB3700E0ADF7 /* HWBooksViewControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B851E9891A80BB3700E0ADF7 /* HWBooksViewControllerTests.m */; };
+		B851E9951A80BFBF00E0ADF7 /* ARTestContext.m in Sources */ = {isa = PBXBuildFile; fileRef = B851E9931A80BFA400E0ADF7 /* ARTestContext.m */; };
+		B851E9961A80BFC300E0ADF7 /* ARExpectaExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = B851E9901A80BF9800E0ADF7 /* ARExpectaExtensions.m */; };
+		B851E9991A80C00A00E0ADF7 /* UIDevice+Hardware.m in Sources */ = {isa = PBXBuildFile; fileRef = B851E9981A80C00A00E0ADF7 /* UIDevice+Hardware.m */; };
+		B8653B9B1A80E65900F42D70 /* HWBookFeedbackViewControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B8653B9A1A80E65900F42D70 /* HWBookFeedbackViewControllerTests.m */; };
+		B88F5BE41A7BC30A00DC2318 /* HWBookTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B88F5BE31A7BC30A00DC2318 /* HWBookTableViewCell.m */; };
+		B88F5BF21A7BC7F900DC2318 /* UIColor+RSKColors.m in Sources */ = {isa = PBXBuildFile; fileRef = B88F5BF11A7BC7F900DC2318 /* UIColor+RSKColors.m */; };
+		B8A13BEB1A7FF3F500CC4D3E /* HomeWorkAPI+BookFeedbackTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B8A13BE91A7FF36F00CC4D3E /* HomeWorkAPI+BookFeedbackTests.m */; };
+		B8A13BF01A80016000CC4D3E /* BookTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B8A13BED1A8000D200CC4D3E /* BookTests.m */; };
+		B8A13BF41A80056C00CC4D3E /* HWBooksNetworkModelTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B8A13BF21A8003ED00CC4D3E /* HWBooksNetworkModelTests.m */; };
+		B8A342291A7BCB6900EC3563 /* UIImage+ImageFromColor.m in Sources */ = {isa = PBXBuildFile; fileRef = B8A342261A7BCB6900EC3563 /* UIImage+ImageFromColor.m */; };
+		B8A3422A1A7BCB6900EC3563 /* UIImageView+AsyncImageLoading.m in Sources */ = {isa = PBXBuildFile; fileRef = B8A342281A7BCB6900EC3563 /* UIImageView+AsyncImageLoading.m */; };
+		B8AB5C781A7B5E8D001DCBE2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B8AB5C761A7B5E8D001DCBE2 /* main.m */; };
+		B8AB5C7F1A7B5F1A001DCBE2 /* HWAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B8AB5C7E1A7B5F1A001DCBE2 /* HWAppDelegate.m */; };
+		B8AB5C881A7B7042001DCBE2 /* HWBooksViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B8AB5C871A7B7042001DCBE2 /* HWBooksViewController.m */; };
+		B8AED53B1A7B820300D300F7 /* Book.m in Sources */ = {isa = PBXBuildFile; fileRef = B8AED53A1A7B820300D300F7 /* Book.m */; };
+		B8AED53E1A7B83A200D300F7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8AED53D1A7B83A200D300F7 /* Foundation.framework */; };
+		B8AED5401A7B83AD00D300F7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8AED53F1A7B83AD00D300F7 /* UIKit.framework */; };
+		B8AED5441A7B8F2E00D300F7 /* HomeWorkAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = B8AED5431A7B8F2E00D300F7 /* HomeWorkAPI.m */; };
+		B8AED54E1A7B911500D300F7 /* HWRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = B8AED54D1A7B911500D300F7 /* HWRouter.m */; };
+		B8AED5511A7B916800D300F7 /* HWNetworkConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = B8AED5501A7B916800D300F7 /* HWNetworkConstants.m */; };
+		B8AED5531A7B94A600D300F7 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8AED5521A7B94A600D300F7 /* SystemConfiguration.framework */; };
+		B8AED5571A7B960500D300F7 /* HWAppConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = B8AED5561A7B960500D300F7 /* HWAppConstants.m */; };
+		B8AED55B1A7B9B2500D300F7 /* HomeWorkAPI+Books.m in Sources */ = {isa = PBXBuildFile; fileRef = B8AED55A1A7B9B2500D300F7 /* HomeWorkAPI+Books.m */; };
+		B8AED55F1A7BAA6A00D300F7 /* MTLModel+JSON.m in Sources */ = {isa = PBXBuildFile; fileRef = B8AED55E1A7BAA6A00D300F7 /* MTLModel+JSON.m */; };
+		B8AED5641A7BAF6C00D300F7 /* HomeWorkAPI+BookFeedback.m in Sources */ = {isa = PBXBuildFile; fileRef = B8AED5631A7BAF6C00D300F7 /* HomeWorkAPI+BookFeedback.m */; };
+		B8AED5681A7BB4F300D300F7 /* HWBooksNetworkModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B8AED5671A7BB4F300D300F7 /* HWBooksNetworkModel.m */; };
+		B8B0E23F1A7FD60B00CDFD8D /* HomeWorkAPI+BooksTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B8B0E23E1A7FD60B00CDFD8D /* HomeWorkAPI+BooksTests.m */; };
+		B8B0E24B1A7FDCC700CDFD8D /* OHHTTPStubs+JSON.m in Sources */ = {isa = PBXBuildFile; fileRef = B8B0E2481A7FDAD100CDFD8D /* OHHTTPStubs+JSON.m */; };
+		B8B0E4141A7F652600522067 /* HWBookFeedbackViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B8B0E4131A7F652600522067 /* HWBookFeedbackViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B835F7901A7B5CE100C38351 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B835F76E1A7B5CE000C38351 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B835F7751A7B5CE000C38351;
+			remoteInfo = "ios-homework-balepc";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		18FB6EAAC76450D12B4A6645 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		216CDA5082CF230F8C0CFEA3 /* libPods-ios-homework-balepcTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ios-homework-balepcTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A9D156AC472DB94B54D6F53B /* Pods-ios-homework-balepcTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ios-homework-balepcTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ios-homework-balepcTests/Pods-ios-homework-balepcTests.debug.xcconfig"; sourceTree = "<group>"; };
+		B81BBA8C1A7FCB710096C3A5 /* HWRouterTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HWRouterTests.m; sourceTree = "<group>"; };
+		B81BBA8E1A7FCBBD0096C3A5 /* ios-homework-balepcTests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ios-homework-balepcTests-Prefix.pch"; sourceTree = "<group>"; };
+		B825DEE71A81376400B01EBA /* HWCommentTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HWCommentTableViewCell.h; sourceTree = "<group>"; };
+		B825DEE81A81376400B01EBA /* HWCommentTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HWCommentTableViewCell.m; sourceTree = "<group>"; };
+		B835F7761A7B5CE100C38351 /* ios-homework-balepc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ios-homework-balepc.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B835F7841A7B5CE100C38351 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B835F7861A7B5CE100C38351 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = ../Images.xcassets; sourceTree = "<group>"; };
+		B835F7891A7B5CE100C38351 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		B835F78F1A7B5CE100C38351 /* ios-homework-balepcTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ios-homework-balepcTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B835F7941A7B5CE100C38351 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B851E9891A80BB3700E0ADF7 /* HWBooksViewControllerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HWBooksViewControllerTests.m; sourceTree = "<group>"; };
+		B851E98F1A80BF9800E0ADF7 /* ARExpectaExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARExpectaExtensions.h; sourceTree = "<group>"; };
+		B851E9901A80BF9800E0ADF7 /* ARExpectaExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARExpectaExtensions.m; sourceTree = "<group>"; };
+		B851E9921A80BFA400E0ADF7 /* ARTestContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARTestContext.h; sourceTree = "<group>"; };
+		B851E9931A80BFA400E0ADF7 /* ARTestContext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARTestContext.m; sourceTree = "<group>"; };
+		B851E9971A80C00A00E0ADF7 /* UIDevice+Hardware.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIDevice+Hardware.h"; sourceTree = "<group>"; };
+		B851E9981A80C00A00E0ADF7 /* UIDevice+Hardware.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIDevice+Hardware.m"; sourceTree = "<group>"; };
+		B8653B9A1A80E65900F42D70 /* HWBookFeedbackViewControllerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HWBookFeedbackViewControllerTests.m; sourceTree = "<group>"; };
+		B88F5BE21A7BC30A00DC2318 /* HWBookTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HWBookTableViewCell.h; sourceTree = "<group>"; };
+		B88F5BE31A7BC30A00DC2318 /* HWBookTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HWBookTableViewCell.m; sourceTree = "<group>"; };
+		B88F5BF01A7BC7F900DC2318 /* UIColor+RSKColors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+RSKColors.h"; sourceTree = "<group>"; };
+		B88F5BF11A7BC7F900DC2318 /* UIColor+RSKColors.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+RSKColors.m"; sourceTree = "<group>"; };
+		B8A13BE91A7FF36F00CC4D3E /* HomeWorkAPI+BookFeedbackTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "HomeWorkAPI+BookFeedbackTests.m"; sourceTree = "<group>"; };
+		B8A13BED1A8000D200CC4D3E /* BookTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookTests.m; sourceTree = "<group>"; };
+		B8A13BF21A8003ED00CC4D3E /* HWBooksNetworkModelTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HWBooksNetworkModelTests.m; sourceTree = "<group>"; };
+		B8A342251A7BCB6900EC3563 /* UIImage+ImageFromColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ImageFromColor.h"; sourceTree = "<group>"; };
+		B8A342261A7BCB6900EC3563 /* UIImage+ImageFromColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ImageFromColor.m"; sourceTree = "<group>"; };
+		B8A342271A7BCB6900EC3563 /* UIImageView+AsyncImageLoading.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+AsyncImageLoading.h"; sourceTree = "<group>"; };
+		B8A342281A7BCB6900EC3563 /* UIImageView+AsyncImageLoading.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+AsyncImageLoading.m"; sourceTree = "<group>"; };
+		B8A4173D51ADD9F6E42A2185 /* Pods-ios-homework-balepcTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ios-homework-balepcTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ios-homework-balepcTests/Pods-ios-homework-balepcTests.release.xcconfig"; sourceTree = "<group>"; };
+		B8AB5C761A7B5E8D001DCBE2 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B8AB5C7B1A7B5ED2001DCBE2 /* ios-homework-balepc-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "ios-homework-balepc-Info.plist"; path = "App/ios-homework-balepc-Info.plist"; sourceTree = "<group>"; };
+		B8AB5C7D1A7B5F1A001DCBE2 /* HWAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HWAppDelegate.h; path = "ios-homework-balepc/Classes/HWAppDelegate.h"; sourceTree = SOURCE_ROOT; };
+		B8AB5C7E1A7B5F1A001DCBE2 /* HWAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HWAppDelegate.m; path = "ios-homework-balepc/Classes/HWAppDelegate.m"; sourceTree = SOURCE_ROOT; };
+		B8AB5C861A7B7042001DCBE2 /* HWBooksViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HWBooksViewController.h; sourceTree = "<group>"; };
+		B8AB5C871A7B7042001DCBE2 /* HWBooksViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HWBooksViewController.m; sourceTree = "<group>"; };
+		B8AED5391A7B820300D300F7 /* Book.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Book.h; sourceTree = "<group>"; };
+		B8AED53A1A7B820300D300F7 /* Book.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Book.m; sourceTree = "<group>"; };
+		B8AED53C1A7B82B200D300F7 /* ios-homework-balepc-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ios-homework-balepc-Prefix.pch"; sourceTree = "<group>"; };
+		B8AED53D1A7B83A200D300F7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		B8AED53F1A7B83AD00D300F7 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		B8AED5421A7B8F2E00D300F7 /* HomeWorkAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeWorkAPI.h; sourceTree = "<group>"; };
+		B8AED5431A7B8F2E00D300F7 /* HomeWorkAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeWorkAPI.m; sourceTree = "<group>"; };
+		B8AED5491A7B904900D300F7 /* HomeWorkAPI+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "HomeWorkAPI+Private.h"; sourceTree = "<group>"; };
+		B8AED54C1A7B911500D300F7 /* HWRouter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HWRouter.h; sourceTree = "<group>"; };
+		B8AED54D1A7B911500D300F7 /* HWRouter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HWRouter.m; sourceTree = "<group>"; };
+		B8AED54F1A7B916800D300F7 /* HWNetworkConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HWNetworkConstants.h; sourceTree = "<group>"; };
+		B8AED5501A7B916800D300F7 /* HWNetworkConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HWNetworkConstants.m; sourceTree = "<group>"; };
+		B8AED5521A7B94A600D300F7 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		B8AED5551A7B960500D300F7 /* HWAppConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HWAppConstants.h; sourceTree = "<group>"; };
+		B8AED5561A7B960500D300F7 /* HWAppConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HWAppConstants.m; sourceTree = "<group>"; };
+		B8AED5581A7B98D200D300F7 /* Models.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Models.h; sourceTree = "<group>"; };
+		B8AED5591A7B9B2500D300F7 /* HomeWorkAPI+Books.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "HomeWorkAPI+Books.h"; sourceTree = "<group>"; };
+		B8AED55A1A7B9B2500D300F7 /* HomeWorkAPI+Books.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "HomeWorkAPI+Books.m"; sourceTree = "<group>"; };
+		B8AED55D1A7BAA6A00D300F7 /* MTLModel+JSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MTLModel+JSON.h"; sourceTree = "<group>"; };
+		B8AED55E1A7BAA6A00D300F7 /* MTLModel+JSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MTLModel+JSON.m"; sourceTree = "<group>"; };
+		B8AED5611A7BABD500D300F7 /* Categories.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Categories.h; sourceTree = "<group>"; };
+		B8AED5621A7BAF6C00D300F7 /* HomeWorkAPI+BookFeedback.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "HomeWorkAPI+BookFeedback.h"; sourceTree = "<group>"; };
+		B8AED5631A7BAF6C00D300F7 /* HomeWorkAPI+BookFeedback.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "HomeWorkAPI+BookFeedback.m"; sourceTree = "<group>"; };
+		B8AED5661A7BB4F300D300F7 /* HWBooksNetworkModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HWBooksNetworkModel.h; sourceTree = "<group>"; };
+		B8AED5671A7BB4F300D300F7 /* HWBooksNetworkModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HWBooksNetworkModel.m; sourceTree = "<group>"; };
+		B8B0E23E1A7FD60B00CDFD8D /* HomeWorkAPI+BooksTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "HomeWorkAPI+BooksTests.m"; sourceTree = "<group>"; };
+		B8B0E2471A7FDAD100CDFD8D /* OHHTTPStubs+JSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "OHHTTPStubs+JSON.h"; sourceTree = "<group>"; };
+		B8B0E2481A7FDAD100CDFD8D /* OHHTTPStubs+JSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "OHHTTPStubs+JSON.m"; sourceTree = "<group>"; };
+		B8B0E4121A7F652600522067 /* HWBookFeedbackViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HWBookFeedbackViewController.h; sourceTree = "<group>"; };
+		B8B0E4131A7F652600522067 /* HWBookFeedbackViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HWBookFeedbackViewController.m; sourceTree = "<group>"; };
+		DCE183E4E625B2B3CA786424 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		E933E0A066C05041D54531F8 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B835F7731A7B5CE000C38351 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B8AED5531A7B94A600D300F7 /* SystemConfiguration.framework in Frameworks */,
+				B8AED5401A7B83AD00D300F7 /* UIKit.framework in Frameworks */,
+				B8AED53E1A7B83A200D300F7 /* Foundation.framework in Frameworks */,
+				98309D74CEFA9B53B12E22FE /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B835F78C1A7B5CE100C38351 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C0116317E75A54ED1BBDDE9 /* libPods-ios-homework-balepcTests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AFAD1816E4DB8D2EACBE9C97 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DCE183E4E625B2B3CA786424 /* Pods.debug.xcconfig */,
+				18FB6EAAC76450D12B4A6645 /* Pods.release.xcconfig */,
+				A9D156AC472DB94B54D6F53B /* Pods-ios-homework-balepcTests.debug.xcconfig */,
+				B8A4173D51ADD9F6E42A2185 /* Pods-ios-homework-balepcTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		B81BBA8F1A7FCD0C0096C3A5 /* Networking Tests */ = {
+			isa = PBXGroup;
+			children = (
+				B8B0E2401A7FD61000CDFD8D /* API Modules */,
+				B8A13BF51A800BF500CC4D3E /* Network Models */,
+				B81BBA8C1A7FCB710096C3A5 /* HWRouterTests.m */,
+			);
+			name = "Networking Tests";
+			sourceTree = "<group>";
+		};
+		B835F76D1A7B5CE000C38351 = {
+			isa = PBXGroup;
+			children = (
+				B835F7781A7B5CE100C38351 /* ios-homework-balepc */,
+				B835F7921A7B5CE100C38351 /* ios-homework-balepc Tests */,
+				B835F7771A7B5CE100C38351 /* Products */,
+				AFAD1816E4DB8D2EACBE9C97 /* Pods */,
+				F20D05BBF3741444D9FB7B4F /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		B835F7771A7B5CE100C38351 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B835F7761A7B5CE100C38351 /* ios-homework-balepc.app */,
+				B835F78F1A7B5CE100C38351 /* ios-homework-balepcTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B835F7781A7B5CE100C38351 /* ios-homework-balepc */ = {
+			isa = PBXGroup;
+			children = (
+				B8AB5C741A7B5E8D001DCBE2 /* App */,
+				B8AB5C7A1A7B5EC0001DCBE2 /* App Resources */,
+				B8AED5601A7BABC900D300F7 /* Categories */,
+				B8AED5541A7B95C300D300F7 /* Constants */,
+				B8AB5C891A7B7B12001DCBE2 /* Models */,
+				B8AED5411A7B8BCC00D300F7 /* Networking */,
+				B8AB5C6E1A7B5E80001DCBE2 /* Resources */,
+				B835F7791A7B5CE100C38351 /* Supporting Files */,
+				B8AB5C801A7B6235001DCBE2 /* View Controllers */,
+				B8AB5C811A7B6235001DCBE2 /* Views */,
+			);
+			path = "ios-homework-balepc";
+			sourceTree = "<group>";
+		};
+		B835F7791A7B5CE100C38351 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B835F7921A7B5CE100C38351 /* ios-homework-balepc Tests */ = {
+			isa = PBXGroup;
+			children = (
+				B851E98E1A80BEFC00E0ADF7 /* Extensions */,
+				B8B0E24A1A7FDAD900CDFD8D /* Categories */,
+				B8A13BEF1A8000DA00CC4D3E /* Model Tests */,
+				B81BBA8F1A7FCD0C0096C3A5 /* Networking Tests */,
+				B835F7931A7B5CE100C38351 /* Supporting Files */,
+				B851E99A1A80C13100E0ADF7 /* View Controller Tests */,
+			);
+			name = "ios-homework-balepc Tests";
+			path = "ios-homework-balepcTests";
+			sourceTree = "<group>";
+		};
+		B835F7931A7B5CE100C38351 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B851E9921A80BFA400E0ADF7 /* ARTestContext.h */,
+				B851E9931A80BFA400E0ADF7 /* ARTestContext.m */,
+				B835F7941A7B5CE100C38351 /* Info.plist */,
+				B81BBA8E1A7FCBBD0096C3A5 /* ios-homework-balepcTests-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B851E98E1A80BEFC00E0ADF7 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				B851E98F1A80BF9800E0ADF7 /* ARExpectaExtensions.h */,
+				B851E9901A80BF9800E0ADF7 /* ARExpectaExtensions.m */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
+		B851E99A1A80C13100E0ADF7 /* View Controller Tests */ = {
+			isa = PBXGroup;
+			children = (
+				B851E99B1A80C14700E0ADF7 /* Books */,
+			);
+			name = "View Controller Tests";
+			sourceTree = "<group>";
+		};
+		B851E99B1A80C14700E0ADF7 /* Books */ = {
+			isa = PBXGroup;
+			children = (
+				B851E9891A80BB3700E0ADF7 /* HWBooksViewControllerTests.m */,
+				B8653B9A1A80E65900F42D70 /* HWBookFeedbackViewControllerTests.m */,
+			);
+			name = Books;
+			sourceTree = "<group>";
+		};
+		B88F5BE91A7BC73600DC2318 /* Apple */ = {
+			isa = PBXGroup;
+			children = (
+				B88F5BF01A7BC7F900DC2318 /* UIColor+RSKColors.h */,
+				B88F5BF11A7BC7F900DC2318 /* UIColor+RSKColors.m */,
+				B8A342251A7BCB6900EC3563 /* UIImage+ImageFromColor.h */,
+				B8A342261A7BCB6900EC3563 /* UIImage+ImageFromColor.m */,
+				B8A342271A7BCB6900EC3563 /* UIImageView+AsyncImageLoading.h */,
+				B8A342281A7BCB6900EC3563 /* UIImageView+AsyncImageLoading.m */,
+			);
+			path = Apple;
+			sourceTree = "<group>";
+		};
+		B8A13BEF1A8000DA00CC4D3E /* Model Tests */ = {
+			isa = PBXGroup;
+			children = (
+				B8A13BED1A8000D200CC4D3E /* BookTests.m */,
+			);
+			name = "Model Tests";
+			sourceTree = "<group>";
+		};
+		B8A13BF51A800BF500CC4D3E /* Network Models */ = {
+			isa = PBXGroup;
+			children = (
+				B8A13BF21A8003ED00CC4D3E /* HWBooksNetworkModelTests.m */,
+			);
+			name = "Network Models";
+			sourceTree = "<group>";
+		};
+		B8AB5C6E1A7B5E80001DCBE2 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B835F7831A7B5CE100C38351 /* Main.storyboard */,
+				B835F7881A7B5CE100C38351 /* LaunchScreen.xib */,
+				B835F7861A7B5CE100C38351 /* Images.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		B8AB5C741A7B5E8D001DCBE2 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				B8AB5C7D1A7B5F1A001DCBE2 /* HWAppDelegate.h */,
+				B8AB5C7E1A7B5F1A001DCBE2 /* HWAppDelegate.m */,
+				B8AB5C761A7B5E8D001DCBE2 /* main.m */,
+				B8AED53C1A7B82B200D300F7 /* ios-homework-balepc-Prefix.pch */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		B8AB5C7A1A7B5EC0001DCBE2 /* App Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B8AB5C7B1A7B5ED2001DCBE2 /* ios-homework-balepc-Info.plist */,
+			);
+			name = "App Resources";
+			sourceTree = "<group>";
+		};
+		B8AB5C801A7B6235001DCBE2 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				B8B0E4151A7F653100522067 /* Books */,
+			);
+			name = "View Controllers";
+			path = Classes/ViewControllers;
+			sourceTree = "<group>";
+		};
+		B8AB5C811A7B6235001DCBE2 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B8AB5C821A7B6235001DCBE2 /* TableViewCells */,
+			);
+			name = Views;
+			path = Classes/Views;
+			sourceTree = "<group>";
+		};
+		B8AB5C821A7B6235001DCBE2 /* TableViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				B88F5BE21A7BC30A00DC2318 /* HWBookTableViewCell.h */,
+				B88F5BE31A7BC30A00DC2318 /* HWBookTableViewCell.m */,
+				B825DEE71A81376400B01EBA /* HWCommentTableViewCell.h */,
+				B825DEE81A81376400B01EBA /* HWCommentTableViewCell.m */,
+			);
+			path = TableViewCells;
+			sourceTree = "<group>";
+		};
+		B8AB5C891A7B7B12001DCBE2 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B8AED5581A7B98D200D300F7 /* Models.h */,
+				B8AED5381A7B81CC00D300F7 /* API Models */,
+			);
+			name = Models;
+			path = Classes/Models;
+			sourceTree = "<group>";
+		};
+		B8AED5371A7B81BB00D300F7 /* Books */ = {
+			isa = PBXGroup;
+			children = (
+				B8AED5391A7B820300D300F7 /* Book.h */,
+				B8AED53A1A7B820300D300F7 /* Book.m */,
+			);
+			name = Books;
+			sourceTree = "<group>";
+		};
+		B8AED5381A7B81CC00D300F7 /* API Models */ = {
+			isa = PBXGroup;
+			children = (
+				B8AED5371A7B81BB00D300F7 /* Books */,
+			);
+			name = "API Models";
+			sourceTree = "<group>";
+		};
+		B8AED5411A7B8BCC00D300F7 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				B8AED5421A7B8F2E00D300F7 /* HomeWorkAPI.h */,
+				B8AED5431A7B8F2E00D300F7 /* HomeWorkAPI.m */,
+				B8AED54F1A7B916800D300F7 /* HWNetworkConstants.h */,
+				B8AED5501A7B916800D300F7 /* HWNetworkConstants.m */,
+				B8AED54C1A7B911500D300F7 /* HWRouter.h */,
+				B8AED54D1A7B911500D300F7 /* HWRouter.m */,
+				B8AED5451A7B8F6300D300F7 /* API Modules */,
+				B8AED5651A7BB47E00D300F7 /* Network Models */,
+				B8AED55C1A7BAA4D00D300F7 /* Mantle Extensions */,
+			);
+			name = Networking;
+			path = Classes/Networking;
+			sourceTree = "<group>";
+		};
+		B8AED5451A7B8F6300D300F7 /* API Modules */ = {
+			isa = PBXGroup;
+			children = (
+				B8AED5491A7B904900D300F7 /* HomeWorkAPI+Private.h */,
+				B8AED5591A7B9B2500D300F7 /* HomeWorkAPI+Books.h */,
+				B8AED55A1A7B9B2500D300F7 /* HomeWorkAPI+Books.m */,
+				B8AED5621A7BAF6C00D300F7 /* HomeWorkAPI+BookFeedback.h */,
+				B8AED5631A7BAF6C00D300F7 /* HomeWorkAPI+BookFeedback.m */,
+			);
+			name = "API Modules";
+			sourceTree = "<group>";
+		};
+		B8AED5541A7B95C300D300F7 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				B8AED5551A7B960500D300F7 /* HWAppConstants.h */,
+				B8AED5561A7B960500D300F7 /* HWAppConstants.m */,
+			);
+			name = Constants;
+			path = Classes/Constants;
+			sourceTree = "<group>";
+		};
+		B8AED55C1A7BAA4D00D300F7 /* Mantle Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				B8AED55D1A7BAA6A00D300F7 /* MTLModel+JSON.h */,
+				B8AED55E1A7BAA6A00D300F7 /* MTLModel+JSON.m */,
+			);
+			name = "Mantle Extensions";
+			path = MantleExtensions;
+			sourceTree = "<group>";
+		};
+		B8AED5601A7BABC900D300F7 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				B8AED5611A7BABD500D300F7 /* Categories.h */,
+				B88F5BE91A7BC73600DC2318 /* Apple */,
+			);
+			name = Categories;
+			path = Classes/Categories;
+			sourceTree = "<group>";
+		};
+		B8AED5651A7BB47E00D300F7 /* Network Models */ = {
+			isa = PBXGroup;
+			children = (
+				B8AED5661A7BB4F300D300F7 /* HWBooksNetworkModel.h */,
+				B8AED5671A7BB4F300D300F7 /* HWBooksNetworkModel.m */,
+			);
+			name = "Network Models";
+			path = NetworkModels;
+			sourceTree = "<group>";
+		};
+		B8B0E2401A7FD61000CDFD8D /* API Modules */ = {
+			isa = PBXGroup;
+			children = (
+				B8B0E23E1A7FD60B00CDFD8D /* HomeWorkAPI+BooksTests.m */,
+				B8A13BE91A7FF36F00CC4D3E /* HomeWorkAPI+BookFeedbackTests.m */,
+			);
+			name = "API Modules";
+			sourceTree = "<group>";
+		};
+		B8B0E24A1A7FDAD900CDFD8D /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				B851E9971A80C00A00E0ADF7 /* UIDevice+Hardware.h */,
+				B851E9981A80C00A00E0ADF7 /* UIDevice+Hardware.m */,
+				B8B0E2471A7FDAD100CDFD8D /* OHHTTPStubs+JSON.h */,
+				B8B0E2481A7FDAD100CDFD8D /* OHHTTPStubs+JSON.m */,
+			);
+			name = Categories;
+			sourceTree = "<group>";
+		};
+		B8B0E4151A7F653100522067 /* Books */ = {
+			isa = PBXGroup;
+			children = (
+				B8AB5C861A7B7042001DCBE2 /* HWBooksViewController.h */,
+				B8AB5C871A7B7042001DCBE2 /* HWBooksViewController.m */,
+				B8B0E4121A7F652600522067 /* HWBookFeedbackViewController.h */,
+				B8B0E4131A7F652600522067 /* HWBookFeedbackViewController.m */,
+			);
+			name = Books;
+			sourceTree = "<group>";
+		};
+		F20D05BBF3741444D9FB7B4F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B8AED5521A7B94A600D300F7 /* SystemConfiguration.framework */,
+				B8AED53F1A7B83AD00D300F7 /* UIKit.framework */,
+				B8AED53D1A7B83A200D300F7 /* Foundation.framework */,
+				E933E0A066C05041D54531F8 /* libPods.a */,
+				216CDA5082CF230F8C0CFEA3 /* libPods-ios-homework-balepcTests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B835F7751A7B5CE000C38351 /* ios-homework-balepc */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B835F7991A7B5CE100C38351 /* Build configuration list for PBXNativeTarget "ios-homework-balepc" */;
+			buildPhases = (
+				1CA2C8829D1DA787F08E14E8 /* Check Pods Manifest.lock */,
+				B835F7721A7B5CE000C38351 /* Sources */,
+				B835F7731A7B5CE000C38351 /* Frameworks */,
+				B835F7741A7B5CE000C38351 /* Resources */,
+				5A903D688A7FCDB28AFD0598 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "ios-homework-balepc";
+			productName = "ios-homework-balepc";
+			productReference = B835F7761A7B5CE100C38351 /* ios-homework-balepc.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B835F78E1A7B5CE100C38351 /* ios-homework-balepcTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B835F79C1A7B5CE100C38351 /* Build configuration list for PBXNativeTarget "ios-homework-balepcTests" */;
+			buildPhases = (
+				E82A1C7D672AB1E1BF2DA0A0 /* Check Pods Manifest.lock */,
+				B835F78B1A7B5CE100C38351 /* Sources */,
+				B835F78C1A7B5CE100C38351 /* Frameworks */,
+				B835F78D1A7B5CE100C38351 /* Resources */,
+				31E05B92836D6B5EFA13362F /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B835F7911A7B5CE100C38351 /* PBXTargetDependency */,
+			);
+			name = "ios-homework-balepcTests";
+			productName = "ios-homework-balepcTests";
+			productReference = B835F78F1A7B5CE100C38351 /* ios-homework-balepcTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B835F76E1A7B5CE000C38351 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = "";
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = "Ruslan Skorb";
+				TargetAttributes = {
+					B835F7751A7B5CE000C38351 = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+					B835F78E1A7B5CE100C38351 = {
+						CreatedOnToolsVersion = 6.1.1;
+						TestTargetID = B835F7751A7B5CE000C38351;
+					};
+				};
+			};
+			buildConfigurationList = B835F7711A7B5CE000C38351 /* Build configuration list for PBXProject "ios-homework-balepc" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B835F76D1A7B5CE000C38351;
+			productRefGroup = B835F7771A7B5CE100C38351 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B835F7751A7B5CE000C38351 /* ios-homework-balepc */,
+				B835F78E1A7B5CE100C38351 /* ios-homework-balepcTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B835F7741A7B5CE000C38351 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B835F7851A7B5CE100C38351 /* Main.storyboard in Resources */,
+				B835F78A1A7B5CE100C38351 /* LaunchScreen.xib in Resources */,
+				B835F7871A7B5CE100C38351 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B835F78D1A7B5CE100C38351 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1CA2C8829D1DA787F08E14E8 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		31E05B92836D6B5EFA13362F /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ios-homework-balepcTests/Pods-ios-homework-balepcTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5A903D688A7FCDB28AFD0598 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E82A1C7D672AB1E1BF2DA0A0 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B835F7721A7B5CE000C38351 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B8A3422A1A7BCB6900EC3563 /* UIImageView+AsyncImageLoading.m in Sources */,
+				B8A342291A7BCB6900EC3563 /* UIImage+ImageFromColor.m in Sources */,
+				B88F5BF21A7BC7F900DC2318 /* UIColor+RSKColors.m in Sources */,
+				B8AED5571A7B960500D300F7 /* HWAppConstants.m in Sources */,
+				B825DEE91A81376400B01EBA /* HWCommentTableViewCell.m in Sources */,
+				B8AB5C781A7B5E8D001DCBE2 /* main.m in Sources */,
+				B8AED5511A7B916800D300F7 /* HWNetworkConstants.m in Sources */,
+				B8AB5C7F1A7B5F1A001DCBE2 /* HWAppDelegate.m in Sources */,
+				B8B0E4141A7F652600522067 /* HWBookFeedbackViewController.m in Sources */,
+				B8AED5681A7BB4F300D300F7 /* HWBooksNetworkModel.m in Sources */,
+				B8AB5C881A7B7042001DCBE2 /* HWBooksViewController.m in Sources */,
+				B8AED5641A7BAF6C00D300F7 /* HomeWorkAPI+BookFeedback.m in Sources */,
+				B8AED5441A7B8F2E00D300F7 /* HomeWorkAPI.m in Sources */,
+				B8AED53B1A7B820300D300F7 /* Book.m in Sources */,
+				B8AED55F1A7BAA6A00D300F7 /* MTLModel+JSON.m in Sources */,
+				B8AED54E1A7B911500D300F7 /* HWRouter.m in Sources */,
+				B8AED55B1A7B9B2500D300F7 /* HomeWorkAPI+Books.m in Sources */,
+				B88F5BE41A7BC30A00DC2318 /* HWBookTableViewCell.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B835F78B1A7B5CE100C38351 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B8A13BF41A80056C00CC4D3E /* HWBooksNetworkModelTests.m in Sources */,
+				B851E98A1A80BB3700E0ADF7 /* HWBooksViewControllerTests.m in Sources */,
+				B851E9951A80BFBF00E0ADF7 /* ARTestContext.m in Sources */,
+				B81BBA8D1A7FCB710096C3A5 /* HWRouterTests.m in Sources */,
+				B8B0E23F1A7FD60B00CDFD8D /* HomeWorkAPI+BooksTests.m in Sources */,
+				B851E9961A80BFC300E0ADF7 /* ARExpectaExtensions.m in Sources */,
+				B8A13BF01A80016000CC4D3E /* BookTests.m in Sources */,
+				B851E9991A80C00A00E0ADF7 /* UIDevice+Hardware.m in Sources */,
+				B8653B9B1A80E65900F42D70 /* HWBookFeedbackViewControllerTests.m in Sources */,
+				B8A13BEB1A7FF3F500CC4D3E /* HomeWorkAPI+BookFeedbackTests.m in Sources */,
+				B8B0E24B1A7FDCC700CDFD8D /* OHHTTPStubs+JSON.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B835F7911A7B5CE100C38351 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B835F7751A7B5CE000C38351 /* ios-homework-balepc */;
+			targetProxy = B835F7901A7B5CE100C38351 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B835F7831A7B5CE100C38351 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B835F7841A7B5CE100C38351 /* Base */,
+			);
+			name = Main.storyboard;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		B835F7881A7B5CE100C38351 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B835F7891A7B5CE100C38351 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			path = ..;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B835F7971A7B5CE100C38351 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B835F7981A7B5CE100C38351 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B835F79A1A7B5CE100C38351 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DCE183E4E625B2B3CA786424 /* Pods.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ios-homework-balepc/App/ios-homework-balepc-Prefix.pch";
+				INFOPLIST_FILE = "$(SRCROOT)/ios-homework-balepc/App/ios-homework-balepc-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		B835F79B1A7B5CE100C38351 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 18FB6EAAC76450D12B4A6645 /* Pods.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ios-homework-balepc/App/ios-homework-balepc-Prefix.pch";
+				INFOPLIST_FILE = "$(SRCROOT)/ios-homework-balepc/App/ios-homework-balepc-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		B835F79D1A7B5CE100C38351 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A9D156AC472DB94B54D6F53B /* Pods-ios-homework-balepcTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ios-homework-balepcTests/ios-homework-balepcTests-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "ios-homework-balepcTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ios-homework-balepc.app/ios-homework-balepc";
+			};
+			name = Debug;
+		};
+		B835F79E1A7B5CE100C38351 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B8A4173D51ADD9F6E42A2185 /* Pods-ios-homework-balepcTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ios-homework-balepcTests/ios-homework-balepcTests-Prefix.pch";
+				INFOPLIST_FILE = "ios-homework-balepcTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ios-homework-balepc.app/ios-homework-balepc";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B835F7711A7B5CE000C38351 /* Build configuration list for PBXProject "ios-homework-balepc" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B835F7971A7B5CE100C38351 /* Debug */,
+				B835F7981A7B5CE100C38351 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B835F7991A7B5CE100C38351 /* Build configuration list for PBXNativeTarget "ios-homework-balepc" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B835F79A1A7B5CE100C38351 /* Debug */,
+				B835F79B1A7B5CE100C38351 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B835F79C1A7B5CE100C38351 /* Build configuration list for PBXNativeTarget "ios-homework-balepcTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B835F79D1A7B5CE100C38351 /* Debug */,
+				B835F79E1A7B5CE100C38351 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B835F76E1A7B5CE000C38351 /* Project object */;
+}
