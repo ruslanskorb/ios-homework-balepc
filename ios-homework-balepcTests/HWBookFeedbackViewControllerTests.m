@@ -26,21 +26,26 @@ describe(@"feedback for the book", ^{
     __block NSString *name;
     __block NSString *comment;
     
-    describe(@"snapshots", ^{
-        beforeEach(^{
-            UIStoryboard *mainStoryboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
-            controller = [mainStoryboard instantiateViewControllerWithIdentifier:@"HWBookFeedbackViewControllerID"];
-            name = @"User Name";
-            comment = @"Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.";
-        });
+    before(^{
+        UIStoryboard *mainStoryboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+        controller = [mainStoryboard instantiateViewControllerWithIdentifier:@"HWBookFeedbackViewControllerID"];
+        [controller view]; // loads view and calls viewDidLoad
         
+        name = @"User Name";
+        comment = @"Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.";
+    });
+    
+    describe(@"snapshots", ^{
         itHasSnapshotsForDevices(@"blank form", ^{
             return controller;
         });
         
         itHasSnapshotsForDevices(@"completed form", ^{
             controller.nameTextField.text = name;
+            [controller.nameTextField sendActionsForControlEvents:(UIControlEventEditingChanged | UIControlEventEditingDidBegin)];
+            
             controller.commentTextView.text = comment;
+            [controller.commentTextView.delegate textViewDidChange:controller.commentTextView];
             
             return controller;
         });
@@ -50,10 +55,6 @@ describe(@"feedback for the book", ^{
         __block Book *book;
         
         beforeEach(^{
-            UIStoryboard *mainStoryboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
-            controller = [mainStoryboard instantiateViewControllerWithIdentifier:@"HWBookFeedbackViewControllerID"];
-            [controller view]; // loads view and calls viewDidLoad
-            
             book = [Book modelWithJSON:@{
                                          @"id": @"1",
                                          @"title": @"MongoDB: The Definitive Guide",
@@ -61,53 +62,70 @@ describe(@"feedback for the book", ^{
                                          @"cover_image": @"http://akamaicovers.oreilly.com/images/0636920001096/cat.gif"
                                          }];
             controller.book = book;
-            
-            name = @"User Name";
-            comment = @"Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.";
         });
         
-        it(@"displays a confirmation after sending a feedback", ^{
-            [OHHTTPStubs stubJSONResponseAtPath:[NSString stringWithFormat:HWCreateFeedbackForBookURLFormat, book.bookID]
-                                   withResponse:@{@"status": @"ok", @"id": book.bookID, @"name": name, @"comment": comment}
-                                  andStatusCode:201];
+        it(@"enables the bar button item 'Send' after completing the form", ^{
+            controller.nameTextField.text = name;
+            [controller.nameTextField sendActionsForControlEvents:(UIControlEventEditingChanged | UIControlEventEditingDidBegin)];
             
-            id mockAlertView = [OCMockObject mockForClass:[UIAlertView class]];
-            [[mockAlertView expect] setAlertViewStyle:UIAlertViewStyleDefault];
-            [[[mockAlertView stub] andReturn:mockAlertView] alloc];
-            (void)[[[mockAlertView expect] andReturn:mockAlertView]
-                   initWithTitle:NSLocalizedString(@"Thanks!", nil)
-                   message:NSLocalizedString(@"Your feedback has been sent.", nil)
-                   delegate:OCMOCK_ANY
-                   cancelButtonTitle:OCMOCK_ANY
-                   otherButtonTitles:OCMOCK_ANY, nil];
-            [[mockAlertView expect] show];
+            controller.commentTextView.text = comment;
+            [controller.commentTextView.delegate textViewDidChange:controller.commentTextView];
             
-            [controller sendFeedback];
-            
-            [mockAlertView verifyWithDelay:1];
-            [mockAlertView stopMocking];
+            expect(controller.sendBarButtonItem.enabled).to.beTruthy();
         });
         
-        it(@"displays an error on failure to send a feedback", ^{
-            [OHHTTPStubs stubJSONResponseAtPath:[NSString stringWithFormat:HWCreateFeedbackForBookURLFormat, book.bookID]
-                                   withResponse:@{@"status": @"fail"}
-                                  andStatusCode:400];
+        describe(@"displays a message after sending a feedback", ^{
+            beforeEach(^{
+                controller.nameTextField.text = name;
+                [controller.nameTextField sendActionsForControlEvents:(UIControlEventEditingChanged | UIControlEventEditingDidBegin)];
+                
+                controller.commentTextView.text = comment;
+                [controller.commentTextView.delegate textViewDidChange:controller.commentTextView];
+            });
             
-            id mockAlertView = [OCMockObject mockForClass:[UIAlertView class]];
-            [[mockAlertView expect] setAlertViewStyle:UIAlertViewStyleDefault];
-            [[[mockAlertView stub] andReturn:mockAlertView] alloc];
-            (void)[[[mockAlertView expect] andReturn:mockAlertView]
-                   initWithTitle:NSLocalizedString(@"Couldn’t Send Feedback", nil)
-                   message:OCMOCK_ANY
-                   delegate:OCMOCK_ANY
-                   cancelButtonTitle:OCMOCK_ANY
-                   otherButtonTitles:OCMOCK_ANY, nil];
-            [[mockAlertView expect] show];
+            it(@"displays a confirmation after sending a feedback", ^{
+                [OHHTTPStubs stubJSONResponseAtPath:[NSString stringWithFormat:HWCreateFeedbackForBookURLFormat, book.bookID]
+                                       withResponse:@{@"status": @"ok", @"id": book.bookID, @"name": name, @"comment": comment}
+                                      andStatusCode:201];
+                
+                id mockAlertView = [OCMockObject mockForClass:[UIAlertView class]];
+                [[mockAlertView expect] setAlertViewStyle:UIAlertViewStyleDefault];
+                [[[mockAlertView stub] andReturn:mockAlertView] alloc];
+                (void)[[[mockAlertView expect] andReturn:mockAlertView]
+                       initWithTitle:NSLocalizedString(@"Thanks!", nil)
+                       message:NSLocalizedString(@"Your feedback has been sent.", nil)
+                       delegate:OCMOCK_ANY
+                       cancelButtonTitle:OCMOCK_ANY
+                       otherButtonTitles:OCMOCK_ANY, nil];
+                [[mockAlertView expect] show];
+                
+                [controller sendFeedback];
+                
+                [mockAlertView verifyWithDelay:1];
+                [mockAlertView stopMocking];
+            });
             
-            [controller sendFeedback];
-            
-            [mockAlertView verifyWithDelay:1];
-            [mockAlertView stopMocking];
+            it(@"displays an error on failure to send a feedback", ^{
+                [OHHTTPStubs stubJSONResponseAtPath:[NSString stringWithFormat:HWCreateFeedbackForBookURLFormat, book.bookID]
+                                       withResponse:@{@"status": @"fail"}
+                                      andStatusCode:400];
+                
+                id mockAlertView = [OCMockObject mockForClass:[UIAlertView class]];
+                [[mockAlertView expect] setAlertViewStyle:UIAlertViewStyleDefault];
+                [[[mockAlertView stub] andReturn:mockAlertView] alloc];
+                (void)[[[mockAlertView expect] andReturn:mockAlertView]
+                       initWithTitle:NSLocalizedString(@"Couldn’t Send Feedback", nil)
+                       message:OCMOCK_ANY
+                       delegate:OCMOCK_ANY
+                       cancelButtonTitle:OCMOCK_ANY
+                       otherButtonTitles:OCMOCK_ANY, nil];
+                [[mockAlertView expect] show];
+                
+                [controller sendFeedback];
+                
+                [mockAlertView verifyWithDelay:1];
+                [mockAlertView stopMocking];
+            });
         });
     });
 });
