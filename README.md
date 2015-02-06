@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/ruslanskorb/ios-homework-balepc.svg)](https://travis-ci.org/ruslanskorb/ios-homework-balepc)
+
 ### Problem definition
 Create a prototype iOS application to meet the following business requirements:
 
@@ -9,7 +11,7 @@ Create a prototype iOS application to meet the following business requirements:
 	- There should be a validation before sending data
 		- name should be present
 		- comment should be present and have more than 100 characters
-	- Form should be sent to (POST)http://54.152.155.201/book/:book_id
+	- Form should be sent to (POST) http://54.152.155.201/book/:book_id
 
 ### Technical requirements
 You have total control over framework and tools, as long as application is written in ObjectiveC/Swift. 
