@@ -9,6 +9,14 @@
 #import "HWBookFeedbackViewController.h"
 #import "HWCommentTableViewCell.h"
 
+static inline CGFLOAT_TYPE CGFloat_ceil(CGFLOAT_TYPE cgfloat) {
+#if CGFLOAT_IS_DOUBLE
+    return ceil(cgfloat);
+#else
+    return ceilf(cgfloat);
+#endif
+}
+
 @interface HWBookFeedbackViewController () <UITextFieldDelegate>
 
 @property (weak, nonatomic) IBOutlet UITextField *nameTextField;
@@ -99,13 +107,21 @@
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     if (indexPath.section == 1) {
+        [self.commentCell setNeedsLayout];
+        [self.commentCell layoutIfNeeded];
+        
         CGFloat width = self.commentTextView.frame.size.width;
-        CGFloat height = [self.commentTextView sizeThatFits:CGSizeMake(width, CGFLOAT_MAX)].height;
+        
+        CGFloat height = CGFloat_ceil([self.commentTextView sizeThatFits:CGSizeMake(width, CGFLOAT_MAX)].height);
+        height += self.commentTextView.textContainerInset.top;
+        height += self.commentTextView.textContainerInset.bottom;
         height -= self.commentTextViewTopConstraint.constant;
         height -= self.commentTextViewBottomConstraint.constant;
+        
         if (height < [self.commentCell minHeight]) {
             height = [self.commentCell minHeight];
         }
+        
         return height;
     } else {
         return [super tableView:tableView heightForRowAtIndexPath:indexPath];

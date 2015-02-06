@@ -99,9 +99,9 @@
                                                 </textField>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="3ks-Y0-uAe" firstAttribute="leading" secondItem="hyc-Z6-8R5" secondAttribute="leadingMargin" constant="7" id="FSa-mN-bnk"/>
+                                                <constraint firstItem="3ks-Y0-uAe" firstAttribute="leading" secondItem="hyc-Z6-8R5" secondAttribute="leading" constant="15" id="FSa-mN-bnk"/>
                                                 <constraint firstAttribute="centerY" secondItem="3ks-Y0-uAe" secondAttribute="centerY" id="dEI-ml-wdT"/>
-                                                <constraint firstAttribute="trailingMargin" secondItem="3ks-Y0-uAe" secondAttribute="trailing" constant="7" id="wgB-GC-7Ad"/>
+                                                <constraint firstAttribute="trailing" secondItem="3ks-Y0-uAe" secondAttribute="trailing" constant="15" id="wgB-GC-7Ad"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
@@ -115,7 +115,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hCZ-V2-KG8" userLabel="commentPlaceholderTextView">
-                                                    <rect key="frame" x="12" y="1" width="576" height="244"/>
+                                                    <rect key="frame" x="10" y="4" width="580" height="237"/>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <attributedString key="attributedText">
                                                         <fragment content="Your comment (more than 100 characters required)">
@@ -129,7 +129,7 @@
                                                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                                 </textView>
                                                 <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" keyboardDismissMode="onDrag" translatesAutoresizingMaskIntoConstraints="NO" id="GQH-oK-njr" userLabel="commentTextView">
-                                                    <rect key="frame" x="12" y="1" width="576" height="244"/>
+                                                    <rect key="frame" x="10" y="4" width="580" height="237"/>
                                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                     <color key="textColor" red="0.49019607840000001" green="0.36078431370000003" blue="0.30980392159999998" alpha="1" colorSpace="calibratedRGB"/>
                                                     <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
@@ -138,11 +138,11 @@
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="hCZ-V2-KG8" firstAttribute="height" secondItem="GQH-oK-njr" secondAttribute="height" id="91X-ON-Nbl"/>
-                                                <constraint firstItem="GQH-oK-njr" firstAttribute="leading" secondItem="lsz-IX-5AV" secondAttribute="leadingMargin" constant="4" id="Df0-fu-ctk"/>
-                                                <constraint firstAttribute="trailingMargin" secondItem="GQH-oK-njr" secondAttribute="trailing" constant="4" id="NyG-Qt-A1x"/>
-                                                <constraint firstAttribute="bottomMargin" secondItem="GQH-oK-njr" secondAttribute="bottom" constant="-8" id="VaW-Kh-nOL"/>
+                                                <constraint firstItem="GQH-oK-njr" firstAttribute="leading" secondItem="lsz-IX-5AV" secondAttribute="leading" constant="10" id="Df0-fu-ctk"/>
+                                                <constraint firstAttribute="trailing" secondItem="GQH-oK-njr" secondAttribute="trailing" priority="999" constant="10" id="NyG-Qt-A1x"/>
+                                                <constraint firstAttribute="bottom" secondItem="GQH-oK-njr" secondAttribute="bottom" priority="999" constant="4" id="VaW-Kh-nOL"/>
                                                 <constraint firstItem="hCZ-V2-KG8" firstAttribute="width" secondItem="GQH-oK-njr" secondAttribute="width" id="Vn8-Yf-dAN"/>
-                                                <constraint firstItem="GQH-oK-njr" firstAttribute="top" secondItem="lsz-IX-5AV" secondAttribute="topMargin" constant="-7" id="WPb-eG-WZI"/>
+                                                <constraint firstItem="GQH-oK-njr" firstAttribute="top" secondItem="lsz-IX-5AV" secondAttribute="top" constant="4" id="WPb-eG-WZI"/>
                                                 <constraint firstItem="hCZ-V2-KG8" firstAttribute="centerX" secondItem="GQH-oK-njr" secondAttribute="centerX" id="gry-7a-vmw"/>
                                                 <constraint firstItem="hCZ-V2-KG8" firstAttribute="centerY" secondItem="GQH-oK-njr" secondAttribute="centerY" id="zib-76-5qD"/>
                                             </constraints>
