@@ -55,6 +55,8 @@ describe(@"books", ^{
         [[[networkModelMock stub] andReturnValue:OCMOCK_VALUE(YES)] allDownloaded];
         [[[mock stub] andReturn:networkModelMock] networkModel];
         
+        [booksVC.view layoutIfNeeded]; // lays out the subviews immediately
+        
         return booksVC;
     });
     
@@ -79,7 +81,10 @@ describe(@"books", ^{
         
         itHasSnapshotsForDevices(@"with books", ^{
             booksBefore();
-            return booksVC.view;
+            
+            [booksVC.view layoutIfNeeded]; // lays out the subviews immediately
+            
+            return booksVC;
         });
         
         it(@"handles tap", ^{
