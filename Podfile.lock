@@ -29,7 +29,7 @@ PODS:
   - SDWebImage (3.7.1):
     - SDWebImage/Core (= 3.7.1)
   - SDWebImage/Core (3.7.1)
-  - Specta (0.3.0.beta1)
+  - Specta (1.0.0)
   - SVProgressHUD (1.1.2)
   - UIAlertView+Blocks (0.8)
   - UIColor+FlatColors (0.0.2)
@@ -51,39 +51,29 @@ DEPENDENCIES:
   - PQFCustomLoaders (= 0.0.1)
   - ReactiveCocoa (= 2.4.4)
   - SDWebImage (= 3.7.1)
-  - Specta (from `https://github.com/specta/specta.git`, tag `v0.3.0.beta1`)
+  - Specta (= 1.0.0)
   - SVProgressHUD (= 1.1.2)
   - UIAlertView+Blocks (= 0.8)
   - XCTest+OHHTTPStubSuiteCleanUp (= 1.0.0)
 
-EXTERNAL SOURCES:
-  Specta:
-    :git: https://github.com/specta/specta.git
-    :tag: v0.3.0.beta1
-
-CHECKOUT OPTIONS:
-  Specta:
-    :git: https://github.com/specta/specta.git
-    :tag: v0.3.0.beta1
-
 SPEC CHECKSUMS:
-  AFNetworking: 80c4e0652b08eb34e25b9c0ff3c82556fe5967b4
-  DZNEmptyDataSet: 15b1425ebba29e5a04d2fac9623a7384e3eaf775
-  EDColor: bcdb8600b7a456f4408ce1d7e7fc001588919254
-  Expecta: ce8a51b9fad15a2cd573b291cb2909aaed865350
-  Expecta+Snapshots: 4a56b9411c6ed156987072e52c39de67d864015a
-  FBSnapshotTestCase: f9f225b5ba11c8d8c09075590490df16314e4d62
-  libextobjc: d6146fce3ebea986b7f75fcb4c967639200b88b0
-  Mantle: 8d84cacd6c2a69ff6fbce985a2b51298a5495de3
-  OCMock: 6db79185520e24f9f299548f2b8b07e41d881bd5
-  OHHTTPStubs: c1c2007839687eaf9b80f061ce84440515080ebb
-  PQFCustomLoaders: 3f59916dce73c721a823a5bb21be28305329e775
-  ReactiveCocoa: 31119068e3dde866bd257cf74e1f06b4023bf387
-  SDWebImage: 116e88633b5b416ea0ca4b334a4ac59cf72dd38d
-  Specta: d2158a483ad179e5f8d3a29f75ff4fc0ff6fab16
-  SVProgressHUD: da7a49e789af645d9279ffbca62318945a832438
-  UIAlertView+Blocks: 90d7f6b2853404277c94f6284c2b8c16028272e6
-  UIColor+FlatColors: 15506ef6472e26a751033f2f2469283800bcb906
-  XCTest+OHHTTPStubSuiteCleanUp: 16f0278ca4d489896745e6f4f71b8b3efa93cba8
+  AFNetworking: cf8e418e16f0c9c7e5c3150d019a3c679d015018
+  DZNEmptyDataSet: ad94b977dfa7fe389d359da5ff60fd2de36aa461
+  EDColor: 89d19a013279a5604d61650721c15f20fefaaf00
+  Expecta: 917bda2935b63ca7175741b8cf1b26796db6205f
+  Expecta+Snapshots: 4a0b46d3ba755bd43dffa7d53e4585fc6cbfe8cd
+  FBSnapshotTestCase: 892508495a69e8703bab36c9da7674ff740d41db
+  libextobjc: a650fc1bf489a3d3a9bc2e621efa3e1006fc5471
+  Mantle: 7dddb082367d3e13bd244636d56838481c4552fe
+  OCMock: a6a7dc0e3997fb9f35d99f72528698ebf60d64f2
+  OHHTTPStubs: c93230597bc5c8b74bcfdb403cc8773515b8b08c
+  PQFCustomLoaders: 6e630d3ab3987e035598050f56a4f5a6a7766d92
+  ReactiveCocoa: cbe3b5eae464aa72a348a7323996b171728a9e71
+  SDWebImage: ed3095af2ff88b436426037444979b917f6c5575
+  Specta: 96fe05fe5c7348b5223f85e862904f6e832abb14
+  SVProgressHUD: 3afb875b9eb23acd1bed9b82495695c68621a8b2
+  UIAlertView+Blocks: 6b408d63507287b22c6e631a2b25ca26f96fb609
+  UIColor+FlatColors: 6c699df7a575281794c688c64cee6c44fd1f93b4
+  XCTest+OHHTTPStubSuiteCleanUp: 4469ec8863c6bc022c5089a9b94233eb3416c5ee
 
-COCOAPODS: 0.36.0.beta.1
+COCOAPODS: 0.37.1
